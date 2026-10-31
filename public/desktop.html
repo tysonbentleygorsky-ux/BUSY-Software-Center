@@ -20,7 +20,7 @@
 <dialog class="asset-dialog asset-details-dialog" id="assetDetailsDialog"><div class="panel-heading"><div><h2 id="assetDetailsTitle">Device details</h2><p>Inventory information for this device.</p></div><button type="button" class="dialog-close" aria-label="Close" onclick="document.getElementById('assetDetailsDialog').close()">×</button></div><div id="assetDetailContent"></div><div class="dialog-actions"><button type="button" class="secondary-button" onclick="document.getElementById('assetDetailsDialog').close()">Close</button><button type="button" class="primary-button" id="assetDetailsEdit">Edit asset <span>→</span></button></div></dialog>
 <section class="quick-actions panel" id="quickActions"><div class="panel-heading"><div><h2>Quick actions</h2><p>Jump straight to the most common tasks.</p></div></div><div class="quick-grid" id="quickGrid"></div></section><footer><span>THE BUSY SCHOOL CALGARY</span><span>Software Center · Local catalog</span></footer></div></main></div>
 <script>
-let role='student',currentUser='',data=null,allApps=[],activeView='#overview';const people={student:{name:'Student',label:'Student'},teacher:{name:'Teacher',label:'Teacher'},admin:{name:'IT Administrator',label:'IT Administrator'}};
+let role='student',currentUser='',data=null,allApps=[],activeView='#overview';const people={student:{name:'Tyson Gorsky',label:'Student'},teacher:{name:'Bob Jones',label:'Teacher'},admin:{name:'Ashley Smith',label:'IT Administrator'}};
 async function loadData(){
   const url='/data?view='+encodeURIComponent(role)+'&user='+encodeURIComponent(currentUser);
   const r=await fetch(url);
